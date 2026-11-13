@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Peumayen Lodge &amp; Termas · Termas y lodge boutique en Pucón</title>
+<meta name="description" content="Lodge boutique y termas en medio del bosque nativo, a orillas del río Liucura, camino a Huife, Pucón. Piscina termal techada, pozones junto al río, restaurant La Fleur de Sel y 48 hectáreas de senderos.">
+<meta name="theme-color" content="#2F3F2C">
+<link rel="canonical" href="https://www.termaspeumayen.cl/">
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Peumayen Lodge &amp; Termas · Pucón">
+<meta property="og:description" content="Termas, bosque nativo y cocina de autor a orillas del río Liucura.">
+<meta property="og:image" content="https://jtfarias98.github.io/peumayen-propuesta/img/piscina-jardin-1600.webp">
+<meta property="og:locale" content="es_CL">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- La imagen de portada se pide primero, en WebP y del tamaño justo -->
+<link rel="preload" as="image" href="img/piscina-jardin-1600.webp"
+      imagesrcset="img/piscina-jardin-800.webp 800w, img/piscina-jardin-1600.webp 1600w"
+      imagesizes="100vw" fetchpriority="high">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=4">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Hotel",
+  "name": "Peumayen Lodge & Termas",
+  "description": "Lodge boutique y termas en el bosque nativo, a orillas del río Liucura, camino Pucón–Huife.",
+  "url": "https://www.termaspeumayen.cl/",
+  "telephone": "+56940103595",
+  "image": "https://jtfarias98.github.io/peumayen-propuesta/img/piscina-jardin-1600.webp",
+  "address": {"@type": "PostalAddress", "streetAddress": "Ruta S-907 km 14,6, camino Pucón–Huife", "addressLocality": "Pucón", "addressRegion": "La Araucanía", "addressCountry": "CL"},
+  "checkinTime": "16:00",
+  "checkoutTime": "12:00",
+  "amenityFeature": [
+    {"@type": "LocationFeatureSpecification", "name": "Piscina termal techada", "value": true},
+    {"@type": "LocationFeatureSpecification", "name": "Pozones termales junto al río", "value": true},
+    {"@type": "LocationFeatureSpecification", "name": "Restaurant", "value": true},
+    {"@type": "LocationFeatureSpecification", "name": "Desayuno incluido", "value": true},
+    {"@type": "LocationFeatureSpecification", "name": "Wifi gratuito", "value": true}
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip" href="#contenido">Ir al contenido</a>
+
+<!-- ============ HEADER ============ -->
+<header class="header" id="header">
+  <!-- Logotipo tipográfico (provisorio: se reemplaza por el logo original si el lodge lo tiene) -->
+  <a href="#inicio" class="brand" aria-label="Peumayen Lodge &amp; Termas, inicio">
+    <span class="brand__name">Peumayen</span>
+    <span class="brand__sub">Lodge &amp; Termas</span>
+  </a>
+  <div class="header__actions">
+    <a href="#reservas" class="btn btn--ghost header__book">Reservar</a>
+    <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">
+      <span class="burger__lines"><span></span><span></span><span></span></span>
+      <span class="burger__label" data-open="Menú" data-close="Cerrar">Menú</span>
+    </button>
+  </div>
+</header>
+
+<!-- Velo suave detrás de los paneles laterales -->
+<div class="veil" id="veil" aria-hidden="true"></div>
+
+<!-- ============ MENÚ LATERAL (entra desde la derecha) ============ -->
+<nav class="panel menu" id="menu" aria-hidden="true" aria-label="Menú principal">
+  <button class="panel__close" data-close-panel aria-label="Cerrar menú"><span>Cerrar</span><i></i></button>
+  <div class="panel__body">
+    <ul class="menu__list">
+      <li><a href="#lodge"><span class="menu__num">01</span>El lodge</a></li>
+      <li><a href="#termas"><span class="menu__num">02</span>Termas</a></li>
+      <li><a href="#habitaciones"><span class="menu__num">03</span>Habitaciones</a></li>
+      <li><a href="#experiencias"><span class="menu__num">04</span>Restaurant</a></li>
+      <li><a href="#galeria"><span class="menu__num">05</span>Galería</a></li>
+      <li><a href="#resenas"><span class="menu__num">06</span>Reseñas</a></li>
+      <li><a href="#reservas"><span class="menu__num">07</span>Reservas</a></li>
+      <li><a href="#contacto"><span class="menu__num">08</span>Cómo llegar</a></li>
+    </ul>
+    <div class="menu__foot">
+      <p class="menu__contact">
+        <a href="tel:+56940103595">+56 9 4010 3595</a>
+        <a href="https://www.instagram.com/lodge.peumayen/">@lodge.peumayen</a>
+      </p>
+      <p class="menu__lang"><a href="#" aria-current="true">ES</a> · <a href="#">EN</a> · <a href="#">PT</a></p>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ PANEL DE RESERVAS (se despliega de arriba hacia abajo) ============ -->
+<aside class="panel book" id="reservas" aria-hidden="true" role="dialog" aria-labelledby="book-title">
+  <button class="panel__close" data-close-panel aria-label="Cerrar reservas"><span>Cerrar</span><i></i></button>
+  <div class="panel__body">
+    <p class="eyebrow">Reservas</p>
+    <h2 class="book__title" id="book-title">Reserva directo, <em>sin intermediarios</em></h2>
+
+    <form class="bform" data-booking>
+      <div class="bform__row">
+        <label class="field"><span>Llegada</span><input type="date" name="in" required></label>
+        <label class="field"><span>Salida</span><input type="date" name="out" required></label>
+      </div>
+      <div class="bform__row">
+        <div class="field">
+          <span>Adultos</span>
+          <div class="stepper"><button type="button" data-step="-1" aria-label="Menos adultos">−</button><input type="number" name="adults" value="2" min="1" max="6" readonly><button type="button" data-step="1" aria-label="Más adultos">+</button></div>
+        </div>
+        <div class="field">
+          <span>Niños</span>
+          <div class="stepper"><button type="button" data-step="-1" aria-label="Menos niños">−</button><input type="number" name="children" value="0" min="0" max="4" readonly><button type="button" data-step="1" aria-label="Más niños">+</button></div>
+        </div>
+      </div>
+      <div class="bform__row">
+        <label class="field">
+          <span>Visita</span>
+          <select name="visit"><option>Alojamiento</option><option>Termas por el día</option></select>
+        </label>
+        <label class="field">
+          <span>Habitación</span>
+          <select name="room">
+            <option value="">Cualquiera</option>
+            <option>Suite en cabaña</option><option>Suite Matrimonial</option><option>Habitación Matrimonial</option>
+            <option>Habitación Triple</option><option>Notro · Cuádruple</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="bform__summary" aria-live="polite">
+        <span data-nights>Selecciona tus fechas</span>
+      </div>
+      <button class="btn btn--solid btn--block" type="submit">Consultar disponibilidad</button>
+      <p class="bform__note">Versión de prueba: en la versión final la consulta llega directo al WhatsApp o al motor de reservas del lodge.</p>
+    </form>
+
+    <ul class="perks">
+      <li><strong>Desayuno incluido</strong> en todas las habitaciones.</li>
+      <li>Acceso a la <strong>piscina termal techada</strong> y a los pozones junto al río.</li>
+      <li>Estacionamiento y Wifi sin costo.</li>
+    </ul>
+  </div>
+</aside>
+
+<main id="contenido">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="inicio">
+  <div class="hero__media">
+    <img src="img/piscina-jardin-1600.webp"
+         srcset="img/piscina-jardin-800.webp 800w, img/piscina-jardin-1600.webp 1600w"
+         sizes="100vw" alt="Piscina y jardín de Peumayen rodeados de bosque nativo" fetchpriority="high" decoding="async" width="1600" height="1200">
+  </div>
+  <div class="hero__content">
+    <p class="eyebrow eyebrow--light reveal">Lodge &amp; termas · Valle del Liucura · Pucón</p>
+    <h1 class="hero__title reveal" style="--d:.1s">Aguas termales<br><em>en el bosque nativo</em></h1>
+    <p class="hero__lead reveal" style="--d:.2s">Termas, cocina de autor y el&nbsp;río&nbsp;Liucura&nbsp;a&nbsp;tus&nbsp;pies.</p>
+  </div>
+  <a href="#lodge" class="hero__scroll" aria-label="Bajar"><span></span></a>
+</section>
+
+<!-- ============ SUBNAV ============ -->
+<nav class="subnav" aria-label="Secciones">
+  <a href="#lodge">El lodge</a>
+  <a href="#termas">Termas</a>
+  <a href="#habitaciones">Habitaciones</a>
+  <a href="#experiencias">Restaurant</a>
+  <a href="#galeria">Galería</a>
+  <a href="#resenas">Reseñas</a>
+  <a href="#reservas">Reservas</a>
+</nav>
+
+<!-- ============ INTRO ============ -->
+<section class="intro" id="lodge">
+  <p class="eyebrow reveal">Peumayen · lugar de sueños</p>
+  <h2 class="display reveal">Un refugio entre coigües y arrayanes.<br><em>Con el río sonando de fondo.</em></h2>
+  <span class="dash reveal"></span>
+  <p class="intro__text reveal">Un lodge boutique de pocas habitaciones en el camino de Pucón a Huife, dentro de un predio de 48 hectáreas de bosque nativo con senderos. Piscina termal techada con vista al bosque, pozones naturales a orillas del río Liucura y un restaurant de cocina de autor con productos de la zona.</p>
+</section>
+
+<!-- ============ CIFRAS ============ -->
+<section class="stats">
+  <div class="stat reveal"><span class="stat__n" data-count="48">0</span><span class="stat__l">hectáreas de bosque nativo</span></div>
+  <div class="stat reveal" style="--d:.08s"><span class="stat__n" data-count="9">0</span><span class="stat__l">km del Parque Nacional Huerquehue</span></div>
+  <div class="stat reveal" style="--d:.16s"><span class="stat__n" data-count="30">0</span><span class="stat__l">km del centro de Pucón</span></div>
+  <div class="stat reveal" style="--d:.24s"><span class="stat__n" data-count="456">0</span><span class="stat__l">opiniones en Google · nota 4,6</span></div>
+</section>
+
+<!-- ============ TERMAS (split + carrusel) ============ -->
+<section class="split" id="termas">
+  <div class="split__text">
+    <p class="eyebrow reveal">Las termas</p>
+    <h2 class="title reveal">Agua termal, <em>bosque y río.</em></h2>
+    <p class="reveal">Una piscina termal techada, con grandes ventanales hacia el bosque, y una piscina exterior en medio del jardín. Bajando por un sendero entre helechos se llega a los pozones termales, al borde del río Liucura: agua caliente, aire frío y el sonido del río.</p>
+    <p class="reveal">Para alojados y también por el día, con reserva previa.</p>
+    <span class="dash dash--left reveal"></span>
+    <a href="#galeria" class="link reveal">Ver las termas</a>
+  </div>
+  <div class="carousel reveal" data-carousel>
+    <div class="carousel__track">
+      <figure class="carousel__slide is-active"><img src="img/piscina-termal-techada-1600.webp" srcset="img/piscina-termal-techada-800.webp 800w, img/piscina-termal-techada-1600.webp 1600w" sizes="(max-width:1000px) 100vw, 50vw" alt="Piscina termal techada" loading="lazy" decoding="async"></figure>
+      <figure class="carousel__slide"><img src="img/pozones-rio-1600.webp" srcset="img/pozones-rio-800.webp 800w, img/pozones-rio-1600.webp 1600w" sizes="(max-width:1000px) 100vw, 50vw" alt="Pozones termales junto al río Liucura" loading="lazy" decoding="async"></figure>
+      <figure class="carousel__slide"><img src="img/termal-techada-luz-1600.webp" srcset="img/termal-techada-luz-800.webp 800w, img/termal-techada-luz-1600.webp 1600w" sizes="(max-width:1000px) 100vw, 50vw" alt="Luz de la mañana en la piscina termal" loading="lazy" decoding="async"></figure>
+      <figure class="carousel__slide"><img src="img/rio-liucura-1600.webp" srcset="img/rio-liucura-800.webp 800w, img/rio-liucura-1600.webp 1600w" sizes="(max-width:1000px) 100vw, 50vw" alt="Río Liucura" loading="lazy" decoding="async"></figure>
+    </div>
+    <div class="carousel__ui">
+      <button class="carousel__btn" data-prev aria-label="Anterior">‹</button>
+      <span class="carousel__count"><span data-current>1</span> / <span data-total>4</span></span>
+      <button class="carousel__btn" data-next aria-label="Siguiente">›</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CITA (reseña real, Tripadvisor, feb 2020) ============ -->
+<section class="quote">
+  <p class="reveal">“Llegar allí fue como abrir una caja de regalo.”</p>
+  <span class="dash reveal"></span>
+</section>
+
+<!-- ============ HABITACIONES ============ -->
+<section class="rooms" id="habitaciones">
+  <div class="section-head">
+    <p class="eyebrow reveal">Alojamiento</p>
+    <h2 class="title reveal">Suites y habitaciones <em>en el bosque</em></h2>
+    <p class="section-head__text reveal">Madera nativa, camas amplias y el bosque en cada ventana.</p>
+  </div>
+
+  <div class="rooms__rail" data-rail>
+    <article class="room">
+      <div class="room__img"><img src="img/suite-cabana-terraza-1600.webp" srcset="img/suite-cabana-terraza-800.webp 800w, img/suite-cabana-terraza-1600.webp 1600w" sizes="(max-width:720px) 80vw, 400px" alt="Suite en cabaña con terraza al bosque" loading="lazy" decoding="async"></div>
+      <div class="room__body">
+        <h3>Suite en cabaña</h3>
+        <p class="room__meta">2 personas</p>
+        <p>Terraza propia al bosque y tina de hidromasaje.</p>
+        <a href="#reservas" class="link" data-room="Suite en cabaña">Reservar</a>
+      </div>
+    </article>
+    <article class="room">
+      <div class="room__img"><img src="img/suite-dosel-1600.webp" srcset="img/suite-dosel-800.webp 800w, img/suite-dosel-1600.webp 1600w" sizes="(max-width:720px) 80vw, 400px" alt="Suite Matrimonial con cama con dosel" loading="lazy" decoding="async"></div>
+      <div class="room__body">
+        <h3>Suite Matrimonial</h3>
+        <p class="room__meta">2 personas</p>
+        <p>Cama con dosel, muros de piedra y madera.</p>
+        <a href="#reservas" class="link" data-room="Suite Matrimonial">Reservar</a>
+      </div>
+    </article>
+    <article class="room">
+      <div class="room__img"><img src="img/habitacion-matrimonial-1600.webp" srcset="img/habitacion-matrimonial-800.webp 800w, img/habitacion-matrimonial-1600.webp 1600w" sizes="(max-width:720px) 80vw, 400px" alt="Habitación Matrimonial" loading="lazy" decoding="async"></div>
+      <div class="room__body">
+        <h3>Habitación Matrimonial</h3>
+        <p class="room__meta">2 personas</p>
+        <p>Cálida, en madera, con vista a los cerros.</p>
+        <a href="#reservas" class="link" data-room="Habitación Matrimonial">Reservar</a>
+      </div>
+    </article>
+    <article class="room">
+      <div class="room__img"><img src="img/habitacion-triple-1600.webp" srcset="img/habitacion-triple-800.webp 800w, img/habitacion-triple-1600.webp 1600w" sizes="(max-width:720px) 80vw, 400px" alt="Habitación Triple" loading="lazy" decoding="async"></div>
+      <div class="room__body">
+        <h3>Habitación Triple</h3>
+        <p class="room__meta">3 personas</p>
+        <p>Cama matrimonial y una individual.</p>
+        <a href="#reservas" class="link" data-room="Habitación Triple">Reservar</a>
+      </div>
+    </article>
+    <article class="room">
+      <div class="room__img"><img src="img/habitacion-cuadruple-1600.webp" srcset="img/habitacion-cuadruple-800.webp 800w, img/habitacion-cuadruple-1600.webp 1600w" sizes="(max-width:720px) 80vw, 400px" alt="Notro, habitación cuádruple" loading="lazy" decoding="async"></div>
+      <div class="room__body">
+        <h3>Notro</h3>
+        <p class="room__meta">Cuádruple · 4 personas</p>
+        <p>Para familias o grupos de amigos.</p>
+        <a href="#reservas" class="link" data-room="Notro · Cuádruple">Reservar</a>
+      </div>
+    </article>
+  </div>
+  <div class="rail__ui">
+    <button class="carousel__btn" data-rail-prev aria-label="Anterior">‹</button>
+    <div class="rail__progress"><span></span></div>
+    <button class="carousel__btn" data-rail-next aria-label="Siguiente">›</button>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCIAS ============ -->
+<section class="exp" id="experiencias">
+  <div class="section-head">
+    <p class="eyebrow reveal">Experiencias</p>
+    <h2 class="title reveal">Mucho más que <em>termas</em></h2>
+  </div>
+  <div class="exp__grid">
+    <a class="tile reveal" href="#galeria" data-filter-link="restaurant">
+      <img src="img/fleur-de-sel-1600.webp" srcset="img/fleur-de-sel-800.webp 800w, img/fleur-de-sel-1600.webp 1600w" sizes="(max-width:720px) 100vw, (max-width:1000px) 50vw, 25vw" alt="Restaurant La Fleur de Sel" loading="lazy" decoding="async">
+      <div class="tile__body"><p class="eyebrow eyebrow--light">Cocina de autor</p><h3>Restaurant La Fleur de Sel</h3><span class="tile__more">Descubrir</span></div>
+    </a>
+    <a class="tile reveal" style="--d:.08s" href="#galeria" data-filter-link="termas">
+      <img src="img/termal-techada-luz-1600.webp" srcset="img/termal-techada-luz-800.webp 800w, img/termal-techada-luz-1600.webp 1600w" sizes="(max-width:720px) 100vw, (max-width:1000px) 50vw, 25vw" alt="Termas por el día" loading="lazy" decoding="async">
+      <div class="tile__body"><p class="eyebrow eyebrow--light">Con reserva</p><h3>Termas por el día</h3><span class="tile__more">Reservar</span></div>
+    </a>
+    <a class="tile reveal" style="--d:.16s" href="#galeria" data-filter-link="restaurant">
+      <img src="img/desayuno-terraza-1600.webp" srcset="img/desayuno-terraza-800.webp 800w, img/desayuno-terraza-1600.webp 1600w" sizes="(max-width:720px) 100vw, (max-width:1000px) 50vw, 25vw" alt="Desayuno en la terraza" loading="lazy" decoding="async">
+      <div class="tile__body"><p class="eyebrow eyebrow--light">Incluido</p><h3>Desayuno en la terraza</h3><span class="tile__more">Descubrir</span></div>
+    </a>
+    <a class="tile reveal" style="--d:.24s" href="#galeria" data-filter-link="entorno">
+      <img src="img/musgo-1600.webp" srcset="img/musgo-800.webp 800w, img/musgo-1600.webp 1600w" sizes="(max-width:720px) 100vw, (max-width:1000px) 50vw, 25vw" alt="Bosque nativo y senderos" loading="lazy" decoding="async">
+      <div class="tile__body"><p class="eyebrow eyebrow--light">Huerquehue a 9 km</p><h3>Senderos y bosque</h3><span class="tile__more">Descubrir</span></div>
+    </a>
+  </div>
+</section>
+
+<!-- ============ GALERÍA ============ -->
+<section class="gallery" id="galeria">
+  <div class="section-head">
+    <p class="eyebrow reveal">Galería</p>
+    <h2 class="title reveal">Mira <em>Peumayen</em></h2>
+  </div>
+  <div class="filters reveal" role="tablist">
+    <button class="filter is-active" data-filter="all">Todo</button>
+    <button class="filter" data-filter="lodge">El lodge</button>
+    <button class="filter" data-filter="termas">Termas</button>
+    <button class="filter" data-filter="habitaciones">Habitaciones</button>
+    <button class="filter" data-filter="restaurant">Restaurant</button>
+    <button class="filter" data-filter="entorno">Entorno</button>
+  </div>
+  <div class="masonry" id="masonry"><!-- generado por JS --></div>
+</section>
+
+
+<!-- ============ RESEÑAS ============ -->
+<section class="reviews" id="resenas">
+  <div class="section-head">
+    <p class="eyebrow reveal">Reseñas</p>
+    <h2 class="title reveal">Lo que dicen <em>nuestros huéspedes</em></h2>
+  </div>
+
+  <div class="reviews__grid">
+    <!-- Nota de Tripadvisor (datos públicos, 13 nov 2026) -->
+    <div class="score reveal">
+      <p class="score__src">Tripadvisor</p>
+      <p class="score__n" data-g-rating>4,4</p>
+      <p class="stars" aria-label="4,4 de 5"><span style="--r:4.4"></span></p>
+      <p class="score__count"><span data-g-count>226</span> opiniones</p>
+      <ul class="bars" aria-label="Distribución de opiniones">
+        <li><span>5</span><i style="--w:54.9%"></i><b>124</b></li>
+        <li><span>4</span><i style="--w:31%"></i><b>70</b></li>
+        <li><span>3</span><i style="--w:11.1%"></i><b>25</b></li>
+        <li><span>2</span><i style="--w:1.3%"></i><b>3</b></li>
+        <li><span>1</span><i style="--w:1.8%"></i><b>4</b></li>
+      </ul>
+      <p class="score__alt">Google <strong>4,6</strong> / 5 · 456 opiniones</p>
+    </div>
+
+    <!-- Cita destacada (reseña real, Tripadvisor, ene 2020) -->
+    <figure class="featured reveal" style="--d:.1s">
+      <span class="featured__mark" aria-hidden="true">“</span>
+      <blockquote>Peumayen es un lugar al que hay que ir una y muchas veces más.</blockquote>
+      <figcaption>FLANKER_76 · Tripadvisor</figcaption>
+    </figure>
+  </div>
+
+  <!-- Reseñas recientes: se cargan en vivo desde Google (Places API) cuando se configura la clave -->
+  <div class="reviews__live" id="reviews-live" hidden></div>
+
+  <div class="reviews__cta reveal">
+    <a class="btn btn--solid" href="https://www.google.com/maps/search/Peumayen+Lodge+%26+Termas+Boutique+Puc%C3%B3n" target="_blank" rel="noopener">Leer las reseñas en Google</a>
+    <a class="link" href="https://www.tripadvisor.cl/Hotel_Review-g294297-d2145917-Reviews-Peumayen_Lodge_Termas-Pucon_Araucania_Region.html" target="_blank" rel="noopener">Ver en Tripadvisor</a>
+  </div>
+</section>
+
+<!-- ============ UBICACIÓN / CONTACTO ============ -->
+<section class="contact" id="contacto">
+  <div class="contact__info">
+    <p class="eyebrow reveal">Cómo llegar</p>
+    <h2 class="title reveal">Camino a Huife, <em>en el valle del Liucura</em></h2>
+    <dl class="contact__list reveal">
+      <div><dt>Dirección</dt><dd>Ruta S-907 km 14,6 (camino Pucón–Huife), Pucón</dd></div>
+      <div><dt>Teléfono</dt><dd><a href="tel:+56940103595">+56 9 4010 3595</a></dd></div>
+      <div><dt>WhatsApp</dt><dd><a href="https://wa.me/56940103595" target="_blank" rel="noopener">+56 9 4010 3595</a></dd></div>
+      <div><dt>Email</dt><dd>[email del lodge]</dd></div>
+      <div><dt>Cerca</dt><dd>Huerquehue 9 km · Santuario El Cañi 11 km · Lago Caburgua 17 km</dd></div>
+    </dl>
+  </div>
+  <div class="contact__map reveal">
+    <!-- El mapa se carga sólo al hacer clic: no frena la página -->
+    <button class="map-facade" data-map>
+      <img src="img/lodge-panoramica-1600.webp" srcset="img/lodge-panoramica-800.webp 800w, img/lodge-panoramica-1600.webp 1600w" sizes="(max-width:1000px) 100vw, 50vw" alt="" loading="lazy" decoding="async">
+      <span class="btn btn--solid">Ver mapa</span>
+    </button>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer__brand">
+    <span class="brand__name">Peumayen</span>
+    <span class="brand__sub">Lodge &amp; Termas · Pucón</span>
+  </div>
+  <nav class="footer__nav">
+    <a href="#lodge">El lodge</a><a href="#termas">Termas</a><a href="#habitaciones">Habitaciones</a><a href="#experiencias">Restaurant</a><a href="#reservas">Reservas</a>
+  </nav>
+  <nav class="footer__social">
+    <a href="https://www.instagram.com/lodge.peumayen/" target="_blank" rel="noopener">Instagram</a><a href="https://www.tripadvisor.cl/Hotel_Review-g294297-d2145917-Reviews-Peumayen_Lodge_Termas-Pucon_Araucania_Region.html" target="_blank" rel="noopener">Tripadvisor</a>
+  </nav>
+  <p class="footer__legal">© 2026 Peumayen Lodge &amp; Termas · <a href="#">Política de reserva</a> · <a href="#">Privacidad</a></p>
+</footer>
+
+<!-- Aviso: versión de prueba de la propuesta -->
+<p class="demo-tag">Propuesta de diseño · versión de prueba por José Farías</p>
+
+<!-- Botón flotante de WhatsApp -->
+<a class="wa" href="https://wa.me/56940103595" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3Zm0 23.7c-2 0-3.9-.5-5.6-1.5l-.4-.2-3.9 1 1-3.8-.3-.4A10.7 10.7 0 1 1 16 26.7Zm5.9-8c-.3-.2-1.9-1-2.2-1-.3-.1-.5-.2-.7.2l-1 1.2c-.2.2-.4.2-.7.1a8.8 8.8 0 0 1-4.4-3.8c-.3-.6.3-.5.9-1.7.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.7 3.7 0 0 0-1.100 2.7 6.4 6.4 0 0 0 1.3 3.4 14.6 14.6 0 0 0 5.6 5c2.1.9 2.9 1 4 .8.6-.1 1.9-.8 2.2-1.5.3-.8.3-1.4.2-1.5l-.8-.4Z"/></svg>
+</a>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Galería de fotos">
+  <button class="lightbox__close" data-lb-close aria-label="Cerrar">×</button>
+  <button class="lightbox__nav lightbox__prev" data-lb-prev aria-label="Anterior">‹</button>
+  <figure class="lightbox__fig"><img alt=""><figcaption></figcaption></figure>
+  <button class="lightbox__nav lightbox__next" data-lb-next aria-label="Siguiente">›</button>
+</div>
+
+<script src="main.js?v=1" defer></script>
+</body>
+</html>
